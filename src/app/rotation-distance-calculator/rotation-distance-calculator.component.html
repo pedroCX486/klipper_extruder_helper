@@ -7,7 +7,7 @@ Distance we'll calibrate to: (recommended is 70mm) <br>
 <pre class="variable">initial_mark_distance</pre>
 <br><br>
 
-Distance we'll extrude to: (recommended is 50mm) <br>
+Distance we'll extrude: (recommended is 50mm) <br>
 <input [(ngModel)]="requested_extrude_distance" placeholder="In mm, eg.: 50" />
 <pre class="variable">requested_extrude_distance</pre>
 <br><br>
@@ -16,7 +16,7 @@ Distance we'll extrude to: (recommended is 50mm) <br>
 2- Execute this GCode <strong>in order</strong>, in Fluidd or Mainsail's Klipper console: <br>
 <pre>
   G91
-  G1 E50 F60
+  G1 E{{ requested_extrude_distance }} F60
 </pre>
 
 Type the space left between original mark and extruder after extrusion, in mm with decimals: <br>
