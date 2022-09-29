@@ -16,7 +16,7 @@ No
 
 ## License
 
-WTFPL
+ISC
 
 ## Live version
 
